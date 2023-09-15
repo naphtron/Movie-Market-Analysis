@@ -1,22 +1,36 @@
-# dsc-phase-1-project
-### NB. The data file used is too large to be stored in this repository
 
-# Overview
+# Movie Market Analysis: Guiding Microsoft's Studio Strategy
+![Logo](https://www.livemint.com/lm-img/img/2023/04/28/600x338/FILES-US-STOCKS-MARKETS-OPEN-0_1682684764176_1682684808221.jpg)
+## Overview
+This project involves the creation of a new Microsoft-backed movie studio. Our goal is to analyze current box office trends to help guide the studio's film production decisions, ensuring we invest in genres and themes that resonate with audiences and maximize success.
+## Installation and Setup
+### Code and Resources Used
+ - Editor: Google Colab (https://colab.research.google.com/)
+-  Python version: Python 3.9
+### Python Packages Used
+- Data Manipulation: Pandas, Numpy
+- Data Visualization: Matplotlib, Seaborn
+## Data
+### Source Data
+- Movie Database from IMDB (https://drive.google.com/file/d/1H1igb4JsvSqtIg7BmSFPON0DEsB_S4nd/view?usp=drive_link)
+### Data Acquisition
+- Information relevant for analysis was extracted from two tables. 
+- movie_basics
+![image](https://drive.google.com/uc?export=view&id=1ws9LVxOW28pwuB7RgLqE6h7nK9yezL7v)
 
-## Background of the business
+- movie_ratings
+![image](https://drive.google.com/uc?export=view&id=1-kbXkxVu852nJszu6DyYnAHmAMQpQaLL)
 
-Microsoft Corporation, a leading force in the software and technology industry, was founded in 1975 and is primarily known for its Windows operating system. Microsoft now offers a wide range of products and services, including cloud computing (Azure), productivity software (Office 365), gaming (Xbox), and business solutions (Dynamics 365). Microsoft's mission is to help individuals and organizations worldwide do more with innovative technology, serving both individuals and businesses.
+This data was merged into one table using pandas for effective analysis.
+![image](https://drive.google.com/uc?export=view&id=1JhboJ5egxIFCdGPvSRAKGJHnluVvkzX3)
+### Data Preprocessing
+No duplicates existed in the data.
+Found null values in two columns (genres and runtime_minutes)
+Filled the null values in the runtime_minutes column with the median value.
+Dropped the rows with null values in the genres column. They were less than 0.5% of the data.
 
-## Domain of the business
+## Code Structure
 
-The domain of this business encompasses the entertainment and media industry, specifically the creation and production of original video content. Microsoft's new movie studio will operate within the broader domain of filmmaking, competing with established Hollywood studios and streaming platforms. This domain involves various aspects but mainly box office performance analysis.
 
-## Business case
 
-In order for Microsoft to enter the movie industry, it recognized the enormous popularity of producing original video content among other big companies. The company aims to leverage its technological expertise, financial resources, and existing global reach to establish a successful movie studio. The primary challenge is Microsoft's lack of experience in the film industry. To address this, they have undertaken a comprehensive analysis to understand which types of films are currently performing the best at the box office. As a result, Microsoft is hoping to make informed decisions about what movies to produce, ultimately helping them compete effectively in the entertainment market and diversify their revenue streams.
 
-# Business Understanding
-
-Microsoft wants to venture into the film industry. This will involve research to better understand the market dynamics, consumer preferences, and the competitive landscape. The main objective is to create successful films that resonate with audiences and contribute significantly to the box office. In order to accomplish this, Microsoft must understand the complexities of the film business, identify key success factors, and align its strategy with the evolving trends in the entertainment industry.
-
-### The primary objective is to analyze current box office trends to identify the most successful film genres. This analysis will provide actionable insights to guide Microsoft's new movie studio in making informed decisions about the types of films to produce. Ultimately, the aim is to ensure a successful entry into the film industry and the creation of content that resonates with audiences, aligning with Microsoft's strategic goals in the realm of original video content, as a prospective entrant.
