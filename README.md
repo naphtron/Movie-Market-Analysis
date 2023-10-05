@@ -1,4 +1,4 @@
-# Movie Market Analysis: Guiding Microsoft's Studio Strategy
+# Movie Market Analysis: Guiding Microsoft's Movie Studio Strategy
 ![Logo](https://www.livemint.com/lm-img/img/2023/04/28/600x338/FILES-US-STOCKS-MARKETS-OPEN-0_1682684764176_1682684808221.jpg)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
